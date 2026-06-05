@@ -6,7 +6,7 @@
 body{
     color:#333;
 }
-/* Box- 1 */
+/* nav bar */
  
 .nav-bar{
     height: 68px;
@@ -38,7 +38,7 @@ body{
     color: rgb(219, 147, 14);
 
 }
-
+/* nav links */
 .nav-links{
     display: flex;
     gap: 30px;
@@ -102,7 +102,7 @@ h1 span {
 
 .hero-card{
     background: #fff;
-    border: 1px solid #dfe6e9;   /* Border */
+    border: 1px solid #dfe6e9;  
     border-radius: 20px;
     padding: 32px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
@@ -115,8 +115,6 @@ h1 span {
     text-align: center;
     align-content: center;
     font-weight: 600;
-
-
     margin-bottom: 20px;
     color: black;
 }
@@ -142,7 +140,7 @@ h1 span {
     margin: 25px 0;
     flex-wrap: wrap;
 }
-.btn-primary{
+.btn-first{
     padding: 12px 24px;
     border-radius: 10px;
     text-decoration: none;
@@ -150,19 +148,19 @@ h1 span {
 }
 
 
-.btn-secondary{
+.btn-second{
     padding: 12px 24px;
     border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
 }
 
-.btn-primary{
+.btn-first{
     background: rgb(42,82,42);
     color: white;
 }
 
-.btn-secondary{
+.btn-second{
     border: 1px solid #d1d5db;
     color: #333;
     background: white;
@@ -227,14 +225,6 @@ h1 span {
     position: relative;
     z-index: 1;
 }
-.hero-sub
- {
-    font-size: 1.1rem;
-    color: var(--text-muted);
-    line-height: 1.7;
-    max-width: 500px;
-    margin-bottom: 36px;
- }
 
 .hero-text {
     animation: fadeUp 0.7s ease both;
@@ -288,9 +278,7 @@ h1 span {
     font-size: 0.82rem;
      font-weight: 500;
 }
-.hero-img {
-    animation: fadeUp 0.7s 0.2s ease both;
-}
+
 
 .hero-card {
     background: #fff;
@@ -310,14 +298,15 @@ p {
     margin-inline-end: 0px;
     unicode-bidi: isolate;
 }
-.services-grid {
+.services-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 24px;
+    /* grid-template-columns: repeat(4, 1fr);  for box repeat */
+    gap: 50px;
+    grid-template-columns: repeat(4, 1fr)
 }
 .service-card {
     background: #fff;
-    border-radius: var(--radius);
+    border-radius: 5px;
     padding: 28px;
     border: 1px solid var(--border);
     transition: all 0.25s;
@@ -325,7 +314,6 @@ p {
 .service-icon {
     width: 48px;
     height: 48px;
-    background: var(--primary-light);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -343,12 +331,6 @@ h3{
     margin-inline-end: 0px;
     font-weight: bold;
     unicode-bidi: isolate;
-}
-.service-card {
-    background: #fff;
-    border-radius: var(--radius);
-    padding: 28px;
-    transition: all 0.25s;
 }
 
 .section-sub {
@@ -392,7 +374,6 @@ h3{
     
 }
 .box{
-    /* border: 2px solid black; */
     align-items: center;
     height: 600px;
     width: 49%;
@@ -408,43 +389,10 @@ h3{
     margin-bottom: 1rem;
 
 }
-@media (max-width: 768px) {
-
-  .nav-links { display: none; }
-  .nav-cta { font-size: 0.8rem; padding: 8px 14px; }
-
-  .hero { padding: 80px 5% 50px; }
-  .hero-inner { flex-direction: column; gap: 30px; }
-  .hero-img { width: 100%; }
-  .hero-card { max-width: 100%; }
-
-  h1 { font-size: clamp(1.6rem, 6vw, 2.2rem); }
-
-  .hero-stats { gap: 16px; }
-  .stat { white-space: normal; }
-
-  .trust-bar { gap: 12px; padding: 14px 10px; }
-  .trust-item { font-size: 0.82rem; }
-
-  .services-grid { grid-template-columns: 1fr; }
-
-  .benefits-sections { flex-direction: column; }
-  .box { width: 100% !important; height: auto !important; }
-  .box2 img { width: 100%; height: auto; }
-
-  .hero-btns { flex-direction: column; }
-  .btn-primary, .btn-secondary { text-align: center; }
-
-  .section-title { font-size: 1.6rem; }
-}
 
 .how-it-works {
     background: rgb(42, 82, 42);
     height: auto;
-}
-.section-inner {
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
 .section-head {
@@ -477,7 +425,6 @@ h3{
 
 .steps-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 0;
     position: relative;
 
@@ -501,7 +448,7 @@ h3{
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     font-weight: 700;
-    box-shadow: 0 4px 16px rgba(10, 110, 87, 0.15);
+    box-shadow: 0 4px 16px rgb(42, 82, 42);
 }
 .book-audit {
     background: rgb(42, 82, 42); 
@@ -524,7 +471,7 @@ h3{
 }
 .section-title {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    font-size: 1.8rem;
     line-height: 1.2;
     letter-spacing: -0.5px;
     margin-bottom: 16px;
@@ -580,8 +527,30 @@ h5 {
     font-weight: 600;
     color: rgba(255, 255, 255, 0.85);
 }
-.form-group input, .form-group select, .form-group textarea {
+.form-group input {
     background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 12px 14px;
+    color: #fff;    font-family: 'DM Sans', sans-serif;
+    font-size: 0.92rem;
+    outline: none;
+      transition: border 0.2s;
+}
+ /* select,textarea  all three same */
+.form-group select{
+  background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 12px 14px;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.92rem;
+    outline: none;
+    transition: border 0.2s;
+}
+.form-group textarea {
+  background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     padding: 12px 14px;
@@ -596,17 +565,9 @@ h5 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 50px;
+  
 }
 
-.form-layout > div{
-    flex: 1;
-}
-@media (max-width: 768px) {
-    .form-layout {
-        grid-template-columns: 1fr;
-    }
-}
 .form-header{
     display: flex;
     justify-content: space-between;
@@ -616,9 +577,6 @@ h5 {
     margin-bottom: 10px;
 }
 
-.form-header h3{
-    margin: 0;
-}
 .form-note {
     text-align: center;
     font-size: 0.78rem;
@@ -683,6 +641,8 @@ footer {
     padding: 28px 50px;
     font-size: 0.85rem;
 }
+
+/* use this media for form mobile responsive */
 @media (max-width: 768px){
 
     .form-layout{
@@ -717,8 +677,34 @@ footer {
     }
 
 }
-@media (max-width: 1100px) {
-    .form-layout{
-        flex-direction: column;
-    }
+
+/* for mobile responsive*/
+@media (max-width: 768px) {
+
+  .nav-links { display: none; }
+  .nav-cta { font-size: 0.8rem; padding: 8px 14px; }
+
+  .hero { padding: 80px 5% 50px; }
+  .hero-inner { flex-direction: column; gap: 30px; }
+  .hero-img { width: 100%; }
+  .hero-card { max-width: 100%; }
+
+  h1 { font-size: clamp(1.6rem, 6vw, 2.2rem); }
+
+  .hero-stats { gap: 16px; }
+  .stat { white-space: normal; }
+
+  .trust-bar { gap: 12px; padding: 14px 10px; }
+  .trust-item { font-size: 0.82rem; }
+
+  .services-grid { grid-template-columns: 1fr; }
+
+  .benefits-sections { flex-direction: column; }
+  .box { width: 100% !important; height: auto !important; }
+  .box2 img { width: 100%; height: auto; }
+
+  .hero-btns { flex-direction: column; }
+  .btn-primary, .btn-secondary { text-align: center; }
+
+  .section-title { font-size: 1.6rem; }
 }

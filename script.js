@@ -13,7 +13,7 @@ function handleSubmit() {
 
     const btn = document.querySelector(".form-submit");
 
-    btn.innerText = "✅ Request Submitted";
+    btn.innerText = " Request Submitted";
     btn.disabled = true;
 
     alert("Thank You! We will contact you soon.");
