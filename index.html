@@ -49,7 +49,8 @@
                 </h1>
                 <p> We help dental clinic owners attract high-value patients, fill their appointment books, and grow revenue — without wasting money on ads that don't convert.</p>
             <div class="hero-btns">
-                <a href="#book-audit" class="btn-first">🎯 Book Free Growth Audit</a>
+                <!-- <a href="#book-audit" class="btn-first">🎯 Book Free Growth Audit</a> -->
+                 <a href="#" class="btn-first" onclick="openPopup()">🎯 Book Free Growth Audit</a>
                 <a href="#how-it-works" class="btn-second">See How It Works</a>
             </div>
             <div class="hero-stats">
@@ -297,21 +298,29 @@
      <section id="whatsapp-us">
     <div class="whatsapp">
         <div class="inner-whatsapp">
-            <h1 class="whats">Prefer to Chat First?</h1>
+            <h1 class="whats">Prefer to Chat or Call First?</h1>
 
             <p class="whats">
                 Message us directly on WhatsApp — tell us about your clinic and we'll respond within 2 hours with a quick assessment. No forms, no waiting.
             </p>
+            <div class="call-button">
+
+            <div class="Call">
+                 <a href="tel:+918960473346 "
+                   class="whatsapp-call"
+                   target="_blank">
+                    📞 Call Us
+                </a>
+            </div>
 
             <div class="whatsapp-logo">
                 <img src="whatsapp.photo.webp" alt="WhatsApp">
-
                 <a href="https://wa.me/918960473346?text=Hi!.. I am interested in the Free Growth Audit for my Dental Clinic.."
                    class="whatsapp-btn"
                    target="_blank">
-
                     Chat on WhatsApp
                 </a>
+            </div>
             </div>
         </div>
     </div>
@@ -326,7 +335,28 @@
     </p>
     <p >📍 Serving clinics across India | 📞 +91 8960XXXXXX| ✉️ dentalcare@gmailcom</p>
 </footer>
+
+<footer>
+
+<div id="popupForm" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Book Free Audit</h2>
+        <input type="text" placeholder="Your Name">
+        <br>
+        <input type="tel" placeholder="Mobile Number">
+        <input type="email" placeholder="Email">
+        <input type="location" placeholder="Location">
+        <br>
+
+
+<button class="popup-button" onclick="handleSubmit()" >  
+    Submit !
+</button >
+    </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
 </body>
+

@@ -18,6 +18,7 @@ function handleSubmit() {
 
     alert("Thank You! We will contact you soon.");
 }
+
 function handleSubmit() {
     alert("Thank You! Your Audit Request Has Been Submitted.");
 
@@ -27,20 +28,19 @@ function handleSubmit() {
         "_blank"
     );
 }
-// function handleSubmit() {
-//     const btn = document.querySelector(".form-submit");
+function handleCall() {
+    alert("Thanku for Calling Us");
 
-//     btn.innerText = " Request Submitted";
-//     btn.disabled = true;
+    window.location.href(
+        "tel: +91 8960473346",
 
-//     alert("Thank You! We will contact you soon.");
-// }
+        "_blank"
+    );
+}
+function openPopup() {
+    document.getElementById("popupForm").style.display = "block";
+}
 
-// function handleSubmit() {
-//     alert("Thank You! Your Audit Request Has Been Submitted.");
-
-//     window.open(
-//         "https://wa.me/918960473346",
-//         "_blank"
-//     );
-// }
+function closePopup() {
+    document.getElementById("popupForm").style.display = "none";
+}
